@@ -4,6 +4,12 @@
 ![Firebase](https://img.shields.io/badge/Auth-Firebase-orange)
 ![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-blue)
 
+🔗 **Live Demo:** [https://assignment-frontend-flame.vercel.app/](https://assignment-frontend-flame.vercel.app/)
+
+📌 **Test Credentials:**
+- Email: `test@gmail.com`
+- Password: `test@01`
+
 A full-stack application built with the MERN stack (MongoDB, Express, React, Node.js) featuring Firebase Authentication and role-based access control. Instructors can create MCQs and Students can attempt them through their respective dashboards.
 
 ## ✨ Features
