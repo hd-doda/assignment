@@ -1,104 +1,77 @@
-📚 MERN Stack Application with Firebase Authentication & Role-Based Redirect
-🚀 Overview
-This project is a MERN stack application that integrates Firebase Authentication with role-based access control. Users are categorized as Instructors or Students, and upon login, they are redirected to their respective dashboards.
+# 🚀 MERN Stack Application with Firebase Authentication & Role-Based Access
 
-🔥 Features
-Firebase Authentication 🔑 (Email/Password login)
+![MERN Stack](https://img.shields.io/badge/Stack-MERN-brightgreen)
+![Firebase](https://img.shields.io/badge/Auth-Firebase-orange)
+![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-blue)
 
-Role Management (Instructor & Student) stored in Firebase & MongoDB
+A full-stack application built with the MERN stack (MongoDB, Express, React, Node.js) featuring Firebase Authentication and role-based access control. Instructors can create MCQs and Students can attempt them through their respective dashboards.
 
-Role-Based Redirection 🚦
+## ✨ Features
 
-📖 Instructors can create Multiple Choice Questions (MCQs)
+- 🔐 Firebase Authentication (Email/Password)
+- 👨‍🏫 Role-based access (Instructor & Student)
+- ➡️ Role-based dashboard redirection
+- 📝 Instructor Dashboard: Create MCQs
+- 📚 Student Dashboard: View & Attempt MCQs
+- 🎨 Styled with Tailwind CSS
+- 🗄️ MongoDB for data persistence
 
-🎓 Students can attempt MCQs
+## 📋 Assignment Requirements
 
-Instructor Dashboard 🎤
+### 1. Firebase Authentication
+- Implemented Firebase Authentication for user login
+- User role stored in both Firebase (Custom Claims) and MongoDB
 
-Create MCQs with options & correct answer
+### 2. Role-Based Redirect
+- Instructor → `/instructor-dashboard`
+- Student → `/student-dashboard`
 
-Save MCQs to MongoDB
+### 3. Instructor Dashboard
+- Form to create Multiple Choice Questions (MCQs) with:
+  - Question text
+  - Multiple options
+  - Correct answer
+- Questions saved to MongoDB
 
-Student Dashboard 📝
+### 4. Student Dashboard
+- Displays MCQs created by instructors
+- Allows students to attempt questions
 
-Fetch & display MCQs
+### 5. Frontend
+- Built with React
+- Styled with Tailwind CSS
 
-Attempt questions
+### 6. Backend
+- Node.js with Express
+- APIs for:
+  - Login/Authentication
+  - Role management
+  - MCQ operations
 
-Backend APIs 🚀 (Node.js & Express)
+### 7. Database (MongoDB)
+- Collections:
+  - `Users`: email, role, firebase_uid
+  - `Questions`: question_text, options, correct_answer
 
-Authentication & Role Management
+## 🛠️ Tech Stack
 
-Store & fetch MCQs
+| Category       | Technologies                          |
+|----------------|---------------------------------------|
+| Frontend       | React, Tailwind CSS                   |
+| Backend        | Node.js, Express                      |
+| Authentication | Firebase                              |
+| Database       | MongoDB                               |
 
-Frontend UI 🌟 (React + Tailwind CSS)
+## 🚀 Getting Started
 
-🛠️ Tech Stack
-Frontend: React ⚛️ + Tailwind CSS 🎨
+### Prerequisites
+- Node.js (v14+)
+- MongoDB Atlas account or local MongoDB
+- Firebase project with Email/Password auth enabled
 
-Backend: Node.js 🚀 + Express.js 🖥️
+### Installation
 
-Authentication: Firebase 🔥
-
-Database: MongoDB 🍃
-
-📌 Database Schema
-Users Collection
-json
-Copy
-Edit
-{
-  "email": "user@example.com",
-  "role": "instructor",
-  "firebase_uid": "unique_firebase_id"
-}
-Questions Collection
-json
-Copy
-Edit
-{
-  "question_text": "What is React?",
-  "options": ["Library", "Framework", "Language", "None"],
-  "correct_answer": "Library"
-}
-📖 Setup Instructions
-1️⃣ Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/repo-name.git
-2️⃣ Install dependencies:
-
-bash
-Copy
-Edit
-cd repo-name
-npm install
-3️⃣ Set up Firebase & MongoDB connection in .env
-4️⃣ Run the project:
-
-bash
-Copy
-Edit
-npm start
-🎯 How It Works
-User logs in using Firebase Authentication.
-
-Their role (Instructor/Student) is retrieved and stored in MongoDB.
-
-Role-Based Redirect:
-
-Instructor: Can create & save MCQs.
-
-Student: Can view & attempt MCQs.
-
-This README will provide a clear overview of your project on GitHub while making it visually engaging with emojis! 🚀
-
-
-
-
-
-
-
-
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/mern-firebase-auth-app.git
+cd mern-firebase-auth-app
